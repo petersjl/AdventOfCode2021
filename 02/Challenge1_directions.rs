@@ -9,7 +9,6 @@ fn main() {
     let mut height :i32 = 0;
 
     for s in list {
-        println!("Got direction: {}", s);
         let mut direction = s.split(" ");
         let command : String = direction.next().unwrap().to_string();
         let count : i32 = direction.next().unwrap().parse().unwrap();
