@@ -23,11 +23,9 @@ fn main() {
 					if map[r][c] > 9 {
 						new_flashes += 1; 
 						flash((r,c), &mut map);
-						println!("({},{}) flashed", r, c);
 					}
 				}
 			}
-			println!("Run {} flashes: {}", n, new_flashes);
 			if new_flashes == 0 {break}
 			flashes += new_flashes;
 		}
